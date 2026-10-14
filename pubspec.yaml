@@ -1,0 +1,39 @@
+name: discipline_focus_assistant
+description: "A modern Flutter Android app for strict mobile discipline with speech-verified alarm, desk camera focus mode, and accessibility app blocker."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Speech to Text recognition for "Ami ghum theke uthechi"
+  speech_to_text: ^6.6.1
+  # Camera plugin for desk setup verification
+  camera: ^0.10.5+9
+  # Hardware vibration control
+  vibration: ^1.9.0
+  # Loud alarm ringtone playback
+  flutter_ringtone_player: ^3.2.0
+  # Persistent local state for streak and whitelist
+  shared_preferences: ^2.2.2
+  # Android permission handler
+  permission_handler: ^11.3.0
+  # Date formatting for alarm
+  intl: ^0.19.0
+  # Audio effects & sound synthesis
+  audioplayers: ^6.0.0
+  # Cupertino icons for modern dark UI
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
